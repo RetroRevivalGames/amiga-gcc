@@ -415,7 +415,7 @@ $(BUILD)/binutils/gprof/Makefile: $(PROJECTS)/binutils/configure $(BUILD)/binuti
 # =================================================
 # gcc
 # =================================================
-CONFIG_GCC = --prefix=$(PREFIX) --target=$(TARGET) --enable-languages=c,c++,objc --enable-version-specific-runtime-libs --disable-libssp --disable-nls --disable-shared --disable-multilib
+CONFIG_GCC = --prefix=$(PREFIX) --target=$(TARGET) --enable-languages=c,c++,objc --enable-version-specific-runtime-libs --disable-libssp --disable-nls --disable-shared --disable-multilib --with-cpu=m68000
 
 # FreeBSD, OSX : libs added by the command brew install gmp mpfr libmpc
 ifeq (Darwin, $(findstring Darwin, $(UNAME_S)))
